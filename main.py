@@ -36,7 +36,7 @@ class ScreenS(Screen):
     wh = Window.height
 
 
-class Project0App(App):
+class Acc_saveApp(App):
     def build(self):
         sm = ScreenManager()
         sm.add_widget(ScreenF())
