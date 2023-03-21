@@ -1,31 +1,183 @@
 <ScreenF>:
     name: '1'
-    BoxLayout:
-        orientation: 'vertical'
+    AnchorLayout:
+        anchor_x: 'center'
+        anchor_y: 'top'
         padding: '10dp'
         spacing: '5dp'
         Label:
-            text: 'plaseholder'
+            text:'Ввеіть ПІН-код'
+            size_hint: None, None
+            size: '200dp', '75dp'
+    AnchorLayout:
+        anchor_x: 'right'
+        anchor_y: 'top'
+        padding: '10dp'
+        spacing: '5dp'
+        Spinner:
+            text: 'language'
+            values: 'Ukr', 'En', 'Pl'
+            size_hint: None, None
+            size: '200dp', '50dp'
+
+    BoxLayout:
+        orientation:'horizontal'
+        padding: '10dp'
+        spacing: '2dp'
+        pos_hint: {'center_x': 0.865, 'center_y':1}
+        TextInput:
+            size_hint: None, None
+            size: '200dp', '50dp'
+            multiline: False
+
+
+    BoxLayout:
+        orientation:'horizontal'
+        padding: '10dp'
+        spacing: '2dp'
+        pos_hint: {'center_x': 0.85, 'center_y':0.87}
+
         Button:
-            text:'next screen'
-            size: 0.5, 0.5
-            pos_hint: {'center_x': 0.5, 'center_y':0.5}
-            on_press: root.press()
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'1'
         Button:
-            text:'text'
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'2'
+        Button:
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'3'
+
+    BoxLayout:
+        orientation:'horizontal'
+        padding: '10dp'
+        spacing: '2dp'
+        pos_hint: {'center_x': 0.85, 'center_y':0.74}
+
+        Button:
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'4'
+        Button:
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'5'
+        Button:
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'6'
+
+
+    BoxLayout:
+        orientation:'horizontal'
+        padding: '10dp'
+        spacing: '2dp'
+        pos_hint: {'center_x': 0.85, 'center_y':0.61}
+
+        Button:
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'7'
+        Button:
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'8'
+        Button:
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'9'
+
+    BoxLayout:
+        orientation:'horizontal'
+        padding: '10dp'
+        spacing: '2dp'
+        pos_hint: {'center_x': 0.85, 'center_y':0.48}
+
+        Button:
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:''
+        Button:
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'0'
+        Button:
+            size_hint: None, None
+            size: '75dp', '75dp'
+            text:'enter'
+            on_press: root.enter()
 
 <ScreenS>:
     name: '2'
-    BoxLayout:
-        orientation: 'vertical'
+    GridLayout:
+        cols: 1
         padding: '10dp'
-        spacing: '5dp'
-        Label:
-            text: 'plaseholder'
-        Button:
-            text:'next screen'
-            size: 0.5, 0.5
-            pos_hint: {'center_x': 0.5, 'center_y':0.5}
-            on_press: root.press()
-        Button:
-            text:'text'
+        spacing: '2dp'
+        ActionBar:
+            pos_hint: {'top':1}
+            ActionView:
+                use_separator: True
+                ActionPrevious:
+                    title: 'Менеджер аккаунтів'
+                    on_press: root.enter()
+                ActionButton:
+                    text: 'Додати пароль'
+
+        ScrollView:
+            do_scroll_x: False
+            do_scroll_y: True
+            size_hint: 1, None
+            size: root.ww, '10000000dp'
+            GridLayout:
+                cols: 1
+                padding: '10dp'
+                spacing: 50
+                size_hint_y: None
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+                Button:
+                    text:'a'
+                    height: 75
+
