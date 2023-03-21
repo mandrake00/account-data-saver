@@ -1,0 +1,17 @@
+{
+    "uk":{
+        "language":"Мова",
+        "enter_pin":"Введіть пін-код"
+    },
+
+    "en":{
+        "language":"Language",
+        "enter_pin":"Enter pin-code"
+    },
+
+    "pl":{
+        "language":"Język",
+        "enter_pin":"Wprowadź kod PIN"
+    }
+
+}
